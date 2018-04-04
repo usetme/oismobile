@@ -1,0 +1,922 @@
+/*公共属性、基本公用*/
+html, body {
+  /*font-family: '微软雅黑';*/
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #f8f8f8
+}
+textarea{
+  border-radius: 0 !important;
+}
+::-webkit-input-placeholder {
+  font-size: 13px;
+}
+input{
+  -webkit-user-select:auto !important;
+}
+#app {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+h4 {
+  text-align: center
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+.router-view {
+  width: 100%;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  backface-visibility: hidden;
+}
+
+/*布局部分*/
+#app .vux-search_show .weui_cell {
+  padding: 15px 15px;
+  color: #ababab;
+  font-size: 15px;
+}
+
+/*自定义属性*/
+.vux-datetime p {
+  font-size: 15px;
+  color: #4e4e4e;
+}
+
+.special_wecell {
+  padding: 5px 15px !important;
+}
+
+.defimg {
+  position: fixed;
+  z-index: 9999;
+  top: 10px;
+  right: 10px;
+  width: 6%
+}
+.long_header .vux-header-title{
+  margin: 0 !important;
+}
+.cardname {
+  padding-left: 10px;
+  overflow: hidden;
+  /*float: left;*/
+}
+.sdecustomer .cardname {
+  float: left;
+}
+.cardname img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  float: left;
+}
+
+.cardname .nameandtel {
+  float: left;
+  margin-left: 10px;
+  width: 80%;
+}
+.sdecustomer .cardname .nameandtel {
+  width: 100px;
+}
+.cardname .spanwhite {
+  color: #3d3d3d;
+  font-size: 16px;
+}
+
+.card_style {
+  font-size: 14px;
+  color: #949393
+}
+
+.card_content {
+  float: left;
+  position: absolute;
+  right: 10px;
+}
+
+.card_content .card_address {
+  font-size: 13px;
+  text-overflow: ellipsis;
+  margin-top: 10px;
+  width: 170px;
+}
+
+.card_content .weui-btn_default {
+  background-color: transparent;
+  color: #58B7FF;
+  border: 1px solid #58B7FF;
+  font-size: 12px;
+  width: inherit;
+  float: left;
+  border-radius: 0;;
+}
+
+.bgcontent {
+  background-image: url("../assets/img/bglogin.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgcontents {
+  background-color: #f8f8f8
+}
+
+.disinlineblock {
+  display: inline-block;
+}
+
+.disblock {
+  display: block
+}
+.contentline{
+  height:20px;
+}
+.pagecontent {
+  overflow: hidden;
+  color: #888
+}
+
+.pagecontent .pagecontentbtn {
+  width: 3em;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #348CB2;
+  color: #fff;
+}
+
+.pagecontent .vux-search_show .weui-cell_bd > p {
+  color: #ababab
+}
+
+.pagecontent .area {
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  height: 2.6em;
+  line-height: 2.6em;
+}
+
+.pagecontent .put_special .vux-number-selector {
+  display: none;
+}
+
+.pagecontent .put_special .vux-number-input {
+  padding-right: 2.4em;
+  padding-left: 2.4em;
+  margin-right: 0.3em;
+}
+
+.pagecontent .weui-cell_ft {
+  font-size: 15px;
+}
+
+.pagecontent .weui_search_bar:after, .pagecontent .weui_search_bar:before {
+  width: 0;
+}
+
+.pagecontent .sinput .weui-input {
+  font-size: 15px;
+  height: 26px;
+  border-radius: 6px;
+  text-align: left;
+}
+
+.pagecontent .weui-cell_primary {
+  font-size: 15px;
+}
+
+.pagecontent .weui_search_bar {
+  padding: 8px 10px;
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  background-color: inherit;
+}
+
+.weui_search_outer {
+  position: relative;
+  -ms-flex: auto;
+  flex: auto;
+}
+
+.vux-search-mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 90%;
+  height: 100%;
+  z-index: 5;
+}
+
+.pagecontent .weui-cell_bd > p, #app .pagecontent .weui-label, #app .pagecontent .vux-label, #app .pagecontent .weui-cell p {
+  font-size: 15px;
+  color: #4e4e4e;
+}
+
+.pagecontent .spcell {
+  background-color: #f7f7fa;
+}
+
+.pagecontent .cel .weui-cell_bd > p, .vote .weui-cell_bd > p {
+  color: #000;
+}
+
+.boxspecialp {
+  font-size: small;
+  color: inherit;
+  width: 75%;
+}
+
+.cardcontent {
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0;
+}
+
+.cardcontent span {
+  text-decoration: none;
+}
+
+.cardcontent .cardname p:nth-child(1) {
+  color: #555
+}
+
+.spanred {
+  color: #f74c31;
+}
+
+.spangreen {
+  color: #04be02;
+}
+
+.spanyellow {
+  color: darkorange;
+}
+
+.spanwhite {
+  color: #555;
+}
+
+.login {
+  height: 100%;
+  position: relative
+}
+
+.login .login-flex {
+  top: 13%;
+  position: absolute;
+}
+
+.login .login-btn {
+  width: 100%;
+  margin-top: 2em;
+  letter-spacing: 10px;
+  border-radius: 50px;
+  height: 54px;
+}
+
+.crmlogo {
+  font-size: 26px;
+  font-weight: inherit;
+  letter-spacing: 0.3em;
+  text-align: center;
+  color: #fff;
+}
+
+.popup1 .abs img {
+  width: 50%;
+}
+
+.popup1 .abs {
+  padding-top: 1em;
+  position: relative;
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+
+.popup1 .rel {
+  font-size: 12px;
+  color: #4e4e4e;
+  position: relative;
+}
+
+.popup1 .img {
+  width: 8%;
+  position: absolute;
+  top: 80%;
+  left: 46%
+}
+
+.sign .signbtn {
+  background-color: #eee
+}
+
+
+.defdaily p {
+  float: left;
+  background-image: url("../assets/img/origize.png");
+  background-position-x: 10px;
+  background-position-y: 6px;
+  background-size: 26px;
+  background-repeat: no-repeat;
+  padding: 5px 40px;
+  font-size: 20px;
+  color: #808080;
+  font-weight: lighter;
+  height: 40px
+}
+
+.defdaily {
+  position: relative;
+  opacity: 1;
+  right: 5px;
+}
+
+.defdaily img {
+  position: absolute;
+  right: 0;
+  top: -22px;
+  width: 40px;
+}
+
+.btngroup {
+  margin-top: 1em
+}
+
+.btngroup button:first-child {
+  float: left;
+  width: 30%;
+  margin-left: 15%
+}
+
+.btngroup button:last-child {
+  margin-left: 10%;
+  margin-top: 0;
+  float: left;
+  width: 30%
+}
+
+.popupbottom {
+  padding-bottom: 15px;
+  height: 200px;
+}
+
+.page_num {
+  width: 100%;
+  display: none;
+  position: fixed;
+  left: 0;
+  bottom: 24px;
+  z-index: 100
+}
+
+.page_num span {
+  width: 60px;
+  display: block;
+  padding: 1px 0;
+  text-align: center;
+  font-size: 13px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid transparent;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  color: white;
+}
+
+/*本身属性改变*/
+#app .vux-1px-tb:before {
+  border-top: none
+}
+#app .weui-tab__panel{padding-bottom:0px !important;}
+.router-view{
+  padding-bottom:50px
+}
+
+#app .vux-1px-tb:after {
+  border-bottom: none
+}
+
+#app .vux-header {
+  width: 100%;
+  z-index: 999;
+  /*position: fixed;*/
+  /*top: 0;*/
+  background-color: #fff;
+  border-bottom: 1px solid #f6f6f6
+}
+
+#app .vux-header .vux-header-title, .vux-header h1 {
+  color: #414141
+}
+
+#app .vux-header .vux-header-left .left-arrow:before {
+  border-color: #414141;
+}
+
+#app .mybtn {
+  background-color: #58B7FF;
+  color: #fff;
+  border: none;
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+
+#app .mybtn2 {
+  letter-spacing: 2px;
+  background-color: #58B7FF;
+  color: #fff;
+  border: none;
+  width: 90%;
+  font-size: 16px;
+}
+
+#app .btn button.weui-btn, input.weui-btn {
+  width: 80%;
+  border-radius: 99px;
+}
+
+#app .vux-search-box {
+  background-color: #fff;
+}
+
+#app .vux-search_show {
+  background: #fff
+}
+
+#app .weui-cell, .weui-cell {
+  background-color: #fff;
+}
+#app .vux-x-textarea{
+  border-bottom: 1px solid #f5f5f5;
+}
+#app .weui_search_inner input {
+  color: #ababab;
+  font-weight: lighter;
+  font-size: 15px;
+  outline: none;
+  padding-left: 10px;
+  letter-spacing: 1px;
+}
+
+.weui_search_inner .weui_search_input {
+  padding: 4px 0;
+  width: 100%;
+  height: 1.42857143em;
+  border: 0;
+  font-size: 14px;
+  line-height: 1.42857143em;
+  box-sizing: content-box;
+  background: transparent;
+}
+
+#app .weui_search_inner input {
+  color: #ababab;
+  /*font-weight: lighter;*/
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+#app .vux-tap-active {
+  padding: 0 15px
+}
+
+#app .weui_search_inner {
+  position: relative;
+}
+
+#app .vux-search-box i {
+  position: absolute;
+  top: 24%;
+  right: 8%;
+}
+
+.card_content .weui-btn:after {
+  border: none;
+}
+
+.card_content .weui-btn + .weui-btn {
+  margin-top: 0;
+  margin-left: 20px;
+}
+
+#app .weui-tabbar__item.weui-bar__item_on .weui-tabbar__label {
+  color: #58B7FF
+}
+
+#app .weui-cell_ft {
+  color: #b1b1b1
+}
+
+#app .weui_search_text, #app .weui_search_inner {
+  background-color: #f7f7f7 !important;
+  height: 30px
+}
+
+.weui-panel:before {
+  border-top: none
+}
+
+#app .vux-button-group > a.vux-button-tab-item-first:after {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  color: #343434;
+  height: 40px;
+  border: 1px solid transparent;
+}
+
+#app .vux-button-group > a.vux-button-tab-item-first {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+#app .vux-button-group > a.vux-button-tab-item-last {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#app .vux-button-group > a.vux-button-tab-item-last:after {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  height: 40px;
+  border: 1px solid transparent;
+}
+
+#app .vux-button-group > a.vux-button-tab-item-middle:after {
+  color: #343434;;
+  height: 40px;
+  font-weight: lighter;
+  border: 1px solid transparent;
+  border-right: none;
+}
+
+#app .vux-button-group {
+  border-top: 1px solid #efefef;
+  border-bottom: 1px solid #efefef
+}
+
+#app .vux-button-group > a.vux-button-group-current, #app .vux-button-group > a.hover, #app .vux-button-group > a:active {
+  border-color: #fff;
+  background-color: #fff;
+  color: #58B7FF
+}
+#app .address .vux-tap-active{
+  padding:15px;
+}
+#app .address .vux-cell-placeholder{
+  font-weight: inherit;
+  font-size: 14px;
+}
+textarea::-webkit-input-placeholder{
+  color:#999;
+  font-size: 14px;
+}
+#app .address .vux-cell-box{
+  margin-right: inherit;
+}
+#app .address .vux-cell-value{
+  font-size: 14px;
+}
+.pagecontent .weui-cells {
+  margin-top: 0
+}
+
+.pagecontent .weui_search_inner .weui_search_input {
+  color: #888
+}
+
+.pagecontent .weui-panel:after {
+  border-bottom: none;
+}
+
+.pagecontent .weui-cells:before {
+  border-top: none
+}
+
+.pagecontent .weui-panel:before {
+  border-top: none
+}
+
+.pagecontent .weui-cells:after {
+  border-bottom: none
+}
+
+.pagecontent .weui-cells.vux-search_show {
+  background-color: #fff;
+}
+
+.pagecontent .weui-cell_ft.with_arrow:after {
+  margin-left: 1em;
+}
+
+.pagecontent .weui-cell, .weui-cell {
+  padding: 15px 15px;
+}
+
+.pagecontent .weui-cell:before, .weui-cell:before {
+  border-top: 1px solid #f5f5f5;
+  width: 90%;
+}
+
+.pagecontent .vux-cell-box:before {
+  border-top: none;
+}
+
+.pagecontent .vux-number-input, .vux-number-selector {
+  font-size: 15px;
+  color: #888
+}
+
+.pagecontent .weui-textarea {
+  border-radius: 6px;
+  color: #999;
+  font-size: 14px;
+  font-weight: inherit;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  -webkit-appearance: none;
+  text-align: right;
+}
+
+.pagecontent .weui-input {
+  text-align: right;
+  margin-left: -15px
+}
+
+.pagecontent .weui-btn_primary {
+  background-color: #fff;
+  color: #000;
+}
+
+.pagecontent .com-input .weui-cell_ft {
+  display: none;
+}
+
+.pagecontent .weui-cells:before, .pagecontent .weui-cells:after {
+  width: 0
+}
+
+.pagecontent .weui-cells {
+  margin-top: 0
+}
+
+.pagecontent .cel .weui-cell_ft, .vote .weui-cell_ft {
+  color: #b1b1b1;
+}
+
+.vote .vux-checker-box {
+  text-align: center;
+}
+
+.vote .check-item {
+  width: 17%;
+}
+
+.vote .weui-cells_title {
+  color: #000
+}
+
+.vux-header > .vux-header-left > .vux-header-back:before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 2px;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #fff;
+  border-width: 1px 0 0 1px;
+  margin-left: 3px;
+  margin-top: 1px;
+  -webkit-transform: rotate(315deg);
+  transform: rotate(315deg);
+}
+
+.sinput .weui-input {
+  text-align: right;
+}
+
+.weui-cells:after, .weui-cells:before {
+  width: 0
+}
+
+.custad .weui-input {
+  border-radius: 6px;
+}
+
+.plan .weui-cell_primary {
+  flex: inherit;
+  -webkit-box-flex: inherit;
+  margin-top: -0.7em;
+}
+
+.vux-no-group-title {
+  margin-top: 0
+}
+
+.weui-panel:after {
+  border: none
+}
+
+.weui-panel {
+  margin-bottom: 10px;
+}
+
+.login .weui-label {
+  color: #dfdfdf
+}
+
+.login .login-flex .login-flex_input {
+  margin-top: 100px
+}
+
+.login .login-flex .weui-cell:before {
+  height: 0
+}
+
+.login .login-flex .weui-icon {
+  display: none
+}
+
+.login .weui-btn_plain-primary {
+  background-color: #58B7FF
+}
+
+.login .login-flex .weui-cell:first-child {
+  margin-bottom: 1em
+}
+
+.login .weui-cell {
+  color: #dfdfdf !important;
+}
+
+.login .weui-cell:before {
+  border: none
+}
+
+.login .weui-cell {
+  width: 80%;
+  height: 20px;
+  border: 1px solid #d6d6d6;
+  border-radius: 50px
+}
+
+#app .vux-popup-dialog {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  transition-property: transform;
+  transition-duration: 300ms;
+  background: #eee;
+  z-index: 999;
+}
+#footer .vux-demo-tabbar {
+  backdrop-filter: blur(10px);
+  background-color: none;
+  background: rgba(247, 247, 250, 0.5)
+}
+
+#footer .vux-popup-dialog {
+  top: 10em
+}
+
+.check-item {
+  width: 100px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  margin-right: 6px;
+}
+
+.check-item-selected {
+  background: #ffffff url(../assets/img/active.png) no-repeat right bottom;
+  border-color: #ff4a00;
+}
+
+.vux-pop-out-enter-active,
+.vux-pop-out-leave-active,
+.vux-pop-in-enter-active,
+.vux-pop-in-leave-active {
+  will-change: transform;
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.vux-pop-out-enter-active {
+  animation-name: popInLeft;
+}
+
+.vux-pop-out-leave-active {
+  animation-name: popOutRight;
+}
+
+.vux-pop-in-enter-active {
+  perspective: 1000;
+  animation-name: popInRight;
+}
+
+.vux-pop-in-leave-active {
+  animation-name: popOutLeft;
+}
+
+@keyframes popInLeft {
+  from {
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes popOutLeft {
+  from {
+    opacity: 1;
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes popInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes popOutRight {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+.vux-cell-box {
+  margin-right: 16px;
+}
+.report  .report_title{
+  margin:10px;
+  color:#333;
+  font-size:16px;
+}
+.report  .report_title span{
+  font-weight: bold;
+  color:red;
+  font-size:18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
